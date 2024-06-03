@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Things Good</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>@allthingsgood</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#stories">Good News Stories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to All Things Good</h2>
+            <p>Celebrating the goodness in the world with uplifting news stories.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>@allthingsgood is dedicated to spreading positivity by sharing good news stories from around the world. With over 400,000 subscribers, we inspire hope and celebrate the goodness in everyday life.</p>
+        </div>
+    </section>
+
+    <section id="stories">
+        <div class="container">
+            <h2>Good News Stories</h2>
+            <div class="story">
+                <h3>Story Title 1</h3>
+                <p>Summary of the good news story.</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="story">
+                <h3>Story Title 2</h3>
+                <p>Summary of the good news story.</p>
+                <a href="#">Read more</a>
+            </div>
+            <!-- Add more stories as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <div class="container">
+            <h2>Our Sponsors</h2>
+            <ul>
+                <li>TOMS Shoes</li>
+                <li>Patagonia</li>
+                <li>Ben & Jerry's</li>
+                <!-- Add more sponsors as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 All Things Good. All rights reserved.</p>
+            <p>Follow us on <a href="https://instagram.com/allthingsgood">@allthingsgood</a></p>
+        </div>
+    </footer>
+</body>body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+section {
+    padding: 4em 0;
+}
+
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+#home {
+    background: #007bff;
+    color: white;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2.5em;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+#about, #contact, #sponsors {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#stories {
+    background: #f8f9fa;
+}
+
+.story {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story h3 {
+    margin-top: 0;
+}
+
+.story a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.story a:hover {
+    text-decoration: underline;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</html>
